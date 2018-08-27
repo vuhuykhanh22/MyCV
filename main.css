@@ -1,254 +1,222 @@
-*{margin:0; padding:0;font-family: 'Roboto', sans-serif;;}
-p{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
-.wrapper{
-    background-color: #f0f4f8;
-    height: 100%;
-    width: 100%;
-    .title_bar{
-        position: relative;
-        width: 430px;
-        height: 60px;
-        background-color: #2c3e50;
-        line-height: 60px;
-        margin-bottom: 30px;
-        p{
-            color:white!important;
-            font-size: 22px!important;
-            padding-left:40px;
-        }
-        &:before{
-            content:'';
-            position:absolute;
-            display: block;
-            height: 60px;
-            width:20px;
-            background-color:#3bceac;
-        }
-    }
-}
-.summary{
-    padding-top:80px;
-    margin-bottom: 80px;
-    .picture{
-        img{
-            display: block;
-            width: 210px;
-            height: 210px;
-            border-radius: 50%;
-            border: 3px solid #3bceac;
-            margin: auto;
-        }
-    }
-    .name{
-        font-size: 60px;
-        color: #3bceac;
-    }
-    .major{
-        h3{
-        font-size: 30px;
-        color:#2c3e50;
-        font-weight: 300;
-        }
-        margin-bottom:50px;
-    }
-    .introduce{
-        p{
-            font-size: 24px;
-            color:#313131;
-            font-weight: 400;
-        }
-    }
-}
-.info{
-    margin-bottom:40px;
-    .experience{
-        ul{
-            list-style: none;
-            li{
-                display: block;
-                margin-bottom: 30px;
-                p{
-                    line-height: 30px;
-                    font-size: 19px;
-                    color:#313131;
-                    font-weight: 600;
-                    &.detail{
-                        margin-top:8px;
-                        font-size: 18px;
-                        color:#4e4e4e;
-                        font-weight: 400;
-                    }
-                }
-                span{
-                    color:#4e4e4e;
-                    font-weight: 350;
-                    
-                }
-                i{
-                    font-style: italic 700;
-                }
-            }
-        }
-    }
-    .personal{
-        .personal_info{
-            font-size:19px;
-        th{
-            color:#313131;
-            font-weight: bold;
-            padding:10px;
-        }
-        td{
-            color:#4e4e4e;
-            font-weight: 400;
-            
-        }
-    }
-    }
-    .education{
-        margin-top:10px;
-        font-size:19px;
-        line-height: 30px;
-        b{
-            color:#3bceac;
-        }
-    }
-}
-.skills{
-    margin-bottom:30px;
-    .title_bar{
-        margin-bottom: 20px;
-    }
-    .skill_table{
-        border:none;
-        th{
-            border:none;
-            width:40%;
-        }
-        td{
-            border:none;
-            span{
-                padding:3px;
-                &:first-child{
-                    margin-left:15px;
-                }
-            }
-            i{
-                font-size:19px;
-                &.checked{
-                    color: #3bceac;
-                }
-            }     
-        }
-    }
-   .certificate{
-       margin-bottom: 10px;
-       h4{
-           margin-bottom: 10px;
-           margin-left:5px;
-       }
-       p{
-           font-size:19px;
-           margin-bottom: 10px;
-           &.score{
-               margin-left:5px;
-           } 
-       }
-   }
-   .interests{
-       i{
-           font-size: 40px;
-           padding:0 18px;
 
-       }
-   }
+p {
+  margin: 0;
+  padding: 0;
 }
-@media screen and (max-width:575px)
-{   
-    .wrapper{
-        .title_bar{
-            width:90%;
-        }
-    }
-    .interests{
-        i{
-            padding:0 26px!important;
-            font-size:41px!important;
-        }
-    }
+
+.wrapper {
+  background-color: #f0f4f8;
+  height: 100%;
+  width: 100%;
 }
-@media screen and (min-width:576px){
-    .wrapper{
-        .title_bar{
-            width: 230px;
-        }
-    }
-    .info{
-        .personal{
-            .personal_info{
-                font-size: 16px;
-                th{
-                    padding:9px 7px;
-                }
-            }
-        }
-    }
-    .skills{
-        .skill_table{
-            td{
-                span{
-                    padding:0;
-                }
-                i{
-                    font-size:14px;
-                }
-            }
-        }
-    .interests{
-        i{
-            padding:0 3px;
-            font-size:32px;
-        }
-    }
+.wrapper .title_bar {
+  position: relative;
+  width: 430px;
+  height: 60px;
+  background-color: #2c3e50;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
+.wrapper .title_bar p {
+  color: white !important;
+  font-size: 22px !important;
+  padding-left: 40px;
 }
-@media screen and  (min-width:768px) {
-    .wrapper{
-        .title_bar{
-            width: 290px;
-        }
-    }
-    .info{
-        .personal{
-            .personal_info{
-                font-size: 17px;
-            }
-        }
-    }
-    .skills{
-        .interests{
-            i{  
-                font-size:30px;
-                padding:0 8px;
-            }
-        }
-    }
+.wrapper .title_bar:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 60px;
+  width: 20px;
+  background-color: #3bceac;
 }
-@media (min-width: 992px) {    
-    .wrapper{
-    .title_bar{
-        width: 385px;
-    }
-    }
-    .skills{
-        .interests{
-            i{  
-                font-size:45px;
-                padding:0 10px;
-            }
-        }
-    }  
+
+.summary {
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.summary .picture img {
+  display: block;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  border: 3px solid #3bceac;
+  margin: auto;
+}
+.summary .name {
+  font-size: 60px;
+  color: #3bceac;
+}
+.summary .major {
+  margin-bottom: 50px;
+}
+.summary .major h3 {
+  font-size: 30px;
+  color: #2c3e50;
+  font-weight: 300;
+}
+.summary .introduce p {
+  font-size: 24px;
+  color: #313131;
+  font-weight: 400;
+}
+
+.info {
+  margin-bottom: 40px;
+}
+.info .experience ul {
+  list-style: none;
+}
+.info .experience ul li {
+  display: block;
+  margin-bottom: 30px;
+}
+.info .experience ul li p {
+  line-height: 30px;
+  font-size: 19px;
+  color: #313131;
+  font-weight: 600;
+}
+.info .experience ul li p.detail {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #4e4e4e;
+  font-weight: 400;
+}
+.info .experience ul li span {
+  color: #4e4e4e;
+  font-weight: 350;
+}
+.info .experience ul li i {
+  font-style: italic 700;
+}
+.info .personal .personal_info {
+  font-size: 19px;
+}
+.info .personal .personal_info th {
+  color: #313131;
+  font-weight: bold;
+  padding: 10px;
+}
+.info .personal .personal_info td {
+  color: #4e4e4e;
+  font-weight: 400;
+}
+.info .education {
+  margin-top: 10px;
+  font-size: 19px;
+  line-height: 30px;
+}
+.info .education b {
+  color: #3bceac;
+}
+
+.skills {
+  margin-bottom: 30px;
+}
+.skills .title_bar {
+  margin-bottom: 20px;
+}
+.skills .skill_table {
+  border: none;
+}
+.skills .skill_table th {
+  border: none;
+  width: 40%;
+}
+.skills .skill_table td {
+  border: none;
+}
+.skills .skill_table td span {
+  padding: 3px;
+}
+.skills .skill_table td span:first-child {
+  margin-left: 15px;
+}
+.skills .skill_table td i {
+  font-size: 19px;
+}
+.skills .skill_table td i.checked {
+  color: #3bceac;
+}
+.skills .certificate {
+  margin-bottom: 10px;
+}
+.skills .certificate h4 {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.skills .certificate p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.skills .certificate p.score {
+  margin-left: 5px;
+}
+.skills .interests i {
+  font-size: 40px;
+  padding: 0 18px;
+}
+
+@media screen and (max-width: 575px) {
+  .wrapper .title_bar {
+    width: 90%;
+  }
+
+  .interests i {
+    padding: 0 26px !important;
+    font-size: 41px !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .wrapper .title_bar {
+    width: 230px;
+  }
+
+  .info .personal .personal_info {
+    font-size: 16px;
+  }
+  .info .personal .personal_info th {
+    padding: 9px 7px;
+  }
+
+  .skills .skill_table td span {
+    padding: 0;
+  }
+  .skills .skill_table td i {
+    font-size: 14px;
+  }
+  .skills .interests i {
+    padding: 0 3px;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapper .title_bar {
+    width: 290px;
+  }
+
+  .info .personal .personal_info {
+    font-size: 17px;
+  }
+
+  .skills .interests i {
+    font-size: 30px;
+    padding: 0 8px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper .title_bar {
+    width: 385px;
+  }
+
+  .skills .interests i {
+    font-size: 45px;
+    padding: 0 10px;
+  }
 }
