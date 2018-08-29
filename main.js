@@ -3,6 +3,5 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop:0});
 		
 	});
-	 new WOW().init();
 })
 
